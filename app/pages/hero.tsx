@@ -41,7 +41,7 @@ const Hero = () => {
               <button className="g-transparent border max-[768px]:hidden text-black	 hover:text-black-700 hover:border-gray-700 px-8 py-4 rounded-md">
                 Enquire Now
               </button>
-              <Image className="uppercase rounded md:hidden" src = "/menu.png"width={60} height={50}/>
+              <Image alt="a" className="uppercase rounded md:hidden" src = "/menu.png"width={60} height={50}/>
              
               
             </div>

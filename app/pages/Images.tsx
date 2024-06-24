@@ -15,9 +15,6 @@ import { useState } from "react";
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(galleryImages[0]);
 
-  const handleImageClick = (src) => {
-    setSelectedImage(src);
-  };
 
   
   return (
@@ -38,7 +35,7 @@ const Gallery = () => {
         
         <div
           className="relative w-full h-52 sm:h-64 md:h-[400px] lg:h-[500px] transition cursor-pointer"
-          onClick={() => handleThumbnailClick(selectedImage)}
+      
         >
           <Image
             src={selectedImage}
@@ -54,7 +51,7 @@ const Gallery = () => {
             .map((src, index) => (
               <div
                 key={index}
-                onClick={() => handleImageClick(src)}
+              
                 className="relative w-full h-16 sm:h-28 md:h-32 cursor-pointer transition hover:scale-105"
               >
                 <Image
